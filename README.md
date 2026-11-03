@@ -55,3 +55,8 @@ Code MIT. Data: NASA FIRMS and NASA POWER (NASA open data), Open-Meteo (CC BY 4.
 - `docker build -t van-agni . && docker run -p 8000:8000 van-agni` then open http://localhost:8000
 - Rebuild every number from raw data: `./reproduce.sh` (pinned versions in `requirements-lock.txt`)
 - Security and compliance: `submission/SECURITY_COMPLIANCE.md` · Reproducibility: `submission/REPRODUCIBILITY.md`
+
+## Pitch and money
+- 8-minute pitch deck with speaker notes: `submission/PITCH_DECK.pptx`
+- 5-year financial model: `submission/FINANCIAL_MODEL.xlsx`
+- Stage 3 walkthrough script: `submission/WALKTHROUGH_SCRIPT.md`
