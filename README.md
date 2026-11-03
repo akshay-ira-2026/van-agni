@@ -49,3 +49,9 @@ Code, documents and data pipeline were written with Ira (an AI agent) under the 
 
 ## Licence
 Code MIT. Data: NASA FIRMS and NASA POWER (NASA open data), Open-Meteo (CC BY 4.0), OpenStreetMap tiles (ODbL).
+
+## Deploy and reproduce
+- Four ways to run it (free cloud, Docker, on-prem, edge/SMS): `deploy/DEPLOYMENT_OPTIONS.md`
+- `docker build -t van-agni . && docker run -p 8000:8000 van-agni` then open http://localhost:8000
+- Rebuild every number from raw data: `./reproduce.sh` (pinned versions in `requirements-lock.txt`)
+- Security and compliance: `submission/SECURITY_COMPLIANCE.md` · Reproducibility: `submission/REPRODUCIBILITY.md`
