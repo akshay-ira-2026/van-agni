@@ -15,9 +15,11 @@ Boundary: model training and scoring on our machine (CPU and RAM). Excludes data
 - Emissions: 1.739e-05 gCO2e per 1,000 cell-scores
 
 ## Water
-- On-site cooling: 0 L (no data centre; PUE (Power Usage Effectiveness) 1.0, WUE (Water Usage Effectiveness) 0 as reported by CodeCarbon)
-- Generation-side: energy × water intensity of India's grid. At an assumed 3.5 L/kWh for thermal-heavy generation, training uses about 9.6e-05 L. Assumption to be replaced by a sourced factor at Stage 3.
-- Water stress context: Uttarakhand basins per WRI (World Resources Institute) Aqueduct, to be attached at Stage 3.
+- On-site cooling: 0 L (no data centre; PUE (Power Usage Effectiveness) 1.0, WUE (Water Usage Effectiveness) 0 as reported by CodeCarbon).
+- Generation-side factor: 3.5 L/kWh. Source: MoEF&CC (Ministry of Environment, Forest and Climate Change) Environment (Protection) Amendment Rules, Dec 2015: specific water consumption cap of 3.5 m3/MWh (= 3.5 L/kWh) for thermal plants installed before 1 Jan 2017, 3.0 m3/MWh for later plants. Coal supplies about three quarters of India's electricity, so the pre-2017 cap is a conservative upper bound for the grid mix. Older plants without ash-water recirculation can reach 5-9 m3/MWh (Power Line, Nov 2021), so a sensitivity range of 3.0-9.0 L/kWh is reported.
+- Result: training 2.735e-05 kWh x 3.5 L/kWh = 9.6e-05 L (range 8.2e-05 to 2.5e-04 L). Daily scoring for a year: about 1.0e-05 kWh, so about 3.5e-05 L a year.
+- Water-stress context: WRI (World Resources Institute) "Parched Power" (Luo, Krishnan and Sen, 2018) finds 14 of India's 20 largest thermal utilities have faced water shortages and that most plants face more water competition by 2030. Van Agni's runtime water use is negligible against that. Its field benefit runs the other way: fewer and smaller fires protect the Himalayan catchments (Ganga and Yamuna headwaters in Uttarakhand) that feed those basins, since burned slopes lose soil and spring recharge.
+- References: MoEF&CC notification S.O. 3305(E), 7 Dec 2015; WRI India working paper "Parched Power", 2018; IRENA (International Renewable Energy Agency) "Water use in India's power generation", 2018.
 
 ## SCI (Software Carbon Intensity, ISO/IEC 21031)
 - Functional unit R: one daily risk map for Uttarakhand (113 cell-scores).
