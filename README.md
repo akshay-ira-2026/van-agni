@@ -62,3 +62,4 @@ Code MIT. Data: NASA FIRMS and NASA POWER (NASA open data), Open-Meteo (CC BY 4.
 - Stage 3 walkthrough script: `submission/WALKTHROUGH_SCRIPT.md`
 
 - Screen recording of the demo (silent, narrate with WALKTHROUGH_SCRIPT.md): `submission/DEMO_RECORDING.mp4`
+- Narrated walkthrough video with captions (Stage 3): `submission/WALKTHROUGH_VIDEO.mp4`
