@@ -60,3 +60,5 @@ Code MIT. Data: NASA FIRMS and NASA POWER (NASA open data), Open-Meteo (CC BY 4.
 - 8-minute pitch deck with speaker notes: `submission/PITCH_DECK.pptx`
 - 5-year financial model: `submission/FINANCIAL_MODEL.xlsx`
 - Stage 3 walkthrough script: `submission/WALKTHROUGH_SCRIPT.md`
+
+- Screen recording of the demo (silent, narrate with WALKTHROUGH_SCRIPT.md): `submission/DEMO_RECORDING.mp4`
