@@ -6,160 +6,140 @@
    "cell": 140.0,
    "lat": 31.375,
    "lon": 77.625,
-   "p": 0.094,
+   "p": 0.081,
    "dry_days": 1,
    "rh7": 55.571,
    "T2M_MAX": 21.6,
    "fires_past7": 0.0
   },
   {
-   "cell": 127.0,
-   "lat": 31.125,
-   "lon": 77.875,
-   "p": 0.076,
-   "dry_days": 1,
-   "rh7": 59.286,
-   "T2M_MAX": 15.9,
-   "fires_past7": 0.0
-  },
-  {
    "cell": 141.0,
    "lat": 31.375,
    "lon": 77.875,
-   "p": 0.07,
+   "p": 0.059,
    "dry_days": 1,
    "rh7": 58.143,
    "T2M_MAX": 5.9,
    "fires_past7": 0.0
   },
   {
-   "cell": 112.0,
-   "lat": 30.875,
-   "lon": 77.625,
-   "p": 0.068,
-   "dry_days": 3,
-   "rh7": 65.714,
-   "T2M_MAX": 18.7,
-   "fires_past7": 0.0
-  },
-  {
-   "cell": 126.0,
-   "lat": 31.125,
-   "lon": 77.625,
-   "p": 0.059,
-   "dry_days": 1,
-   "rh7": 68.143,
-   "T2M_MAX": 14.6,
-   "fires_past7": 0.0
-  },
-  {
    "cell": 128.0,
    "lat": 31.125,
    "lon": 78.125,
-   "p": 0.056,
+   "p": 0.042,
    "dry_days": 1,
    "rh7": 61.0,
    "T2M_MAX": 12.4,
    "fires_past7": 0.0
   },
   {
+   "cell": 127.0,
+   "lat": 31.125,
+   "lon": 77.875,
+   "p": 0.039,
+   "dry_days": 1,
+   "rh7": 59.286,
+   "T2M_MAX": 15.9,
+   "fires_past7": 0.0
+  },
+  {
+   "cell": 112.0,
+   "lat": 30.875,
+   "lon": 77.625,
+   "p": 0.033,
+   "dry_days": 3,
+   "rh7": 65.714,
+   "T2M_MAX": 18.7,
+   "fires_past7": 0.0
+  },
+  {
    "cell": 85.0,
    "lat": 30.375,
    "lon": 77.875,
-   "p": 0.048,
+   "p": 0.029,
    "dry_days": 4,
    "rh7": 78.571,
    "T2M_MAX": 25.8,
    "fires_past7": 0.0
   },
   {
-   "cell": 113.0,
-   "lat": 30.875,
-   "lon": 77.875,
-   "p": 0.047,
-   "dry_days": 4,
-   "rh7": 72.429,
-   "T2M_MAX": 23.6,
-   "fires_past7": 0.0
-  },
-  {
-   "cell": 114.0,
-   "lat": 30.875,
-   "lon": 78.125,
-   "p": 0.033,
+   "cell": 126.0,
+   "lat": 31.125,
+   "lon": 77.625,
+   "p": 0.029,
    "dry_days": 1,
-   "rh7": 67.0,
-   "T2M_MAX": 22.1,
+   "rh7": 68.143,
+   "T2M_MAX": 14.6,
    "fires_past7": 0.0
   },
   {
    "cell": 67.0,
    "lat": 29.875,
    "lon": 80.375,
-   "p": 0.032,
+   "p": 0.027,
    "dry_days": 4,
    "rh7": 58.0,
    "T2M_MAX": 22.7,
    "fires_past7": 0.0
   },
   {
-   "cell": 65.0,
-   "lat": 29.875,
-   "lon": 79.875,
-   "p": 0.03,
-   "dry_days": 1,
-   "rh7": 67.571,
-   "T2M_MAX": 26.2,
-   "fires_past7": 0.0
-  },
-  {
-   "cell": 78.0,
-   "lat": 30.125,
-   "lon": 79.625,
-   "p": 0.028,
-   "dry_days": 1,
-   "rh7": 59.143,
-   "T2M_MAX": 18.5,
-   "fires_past7": 0.0
-  },
-  {
-   "cell": 63.0,
-   "lat": 29.875,
-   "lon": 79.375,
-   "p": 0.026,
+   "cell": 113.0,
+   "lat": 30.875,
+   "lon": 77.875,
+   "p": 0.025,
    "dry_days": 4,
-   "rh7": 73.286,
-   "T2M_MAX": 24.0,
+   "rh7": 72.429,
+   "T2M_MAX": 23.6,
    "fires_past7": 0.0
   },
   {
    "cell": 66.0,
    "lat": 29.875,
    "lon": 80.125,
-   "p": 0.025,
+   "p": 0.022,
    "dry_days": 4,
    "rh7": 58.143,
    "T2M_MAX": 23.4,
    "fires_past7": 0.0
   },
   {
-   "cell": 101.0,
-   "lat": 30.625,
+   "cell": 129.0,
+   "lat": 31.125,
    "lon": 78.375,
-   "p": 0.019,
-   "dry_days": 4,
-   "rh7": 67.571,
-   "T2M_MAX": 19.9,
+   "p": 0.021,
+   "dry_days": 1,
+   "rh7": 57.429,
+   "T2M_MAX": 13.3,
    "fires_past7": 0.0
   },
   {
-   "cell": 50.0,
-   "lat": 29.625,
+   "cell": 78.0,
+   "lat": 30.125,
    "lon": 79.625,
-   "p": 0.019,
+   "p": 0.021,
    "dry_days": 1,
-   "rh7": 74.857,
-   "T2M_MAX": 25.1,
+   "rh7": 59.143,
+   "T2M_MAX": 18.5,
+   "fires_past7": 0.0
+  },
+  {
+   "cell": 114.0,
+   "lat": 30.875,
+   "lon": 78.125,
+   "p": 0.02,
+   "dry_days": 1,
+   "rh7": 67.0,
+   "T2M_MAX": 22.1,
+   "fires_past7": 0.0
+  },
+  {
+   "cell": 63.0,
+   "lat": 29.875,
+   "lon": 79.375,
+   "p": 0.02,
+   "dry_days": 4,
+   "rh7": 73.286,
+   "T2M_MAX": 24.0,
    "fires_past7": 0.0
   },
   {
@@ -173,10 +153,50 @@
    "fires_past7": 0.0
   },
   {
+   "cell": 131.0,
+   "lat": 31.125,
+   "lon": 78.875,
+   "p": 0.019,
+   "dry_days": 4,
+   "rh7": 60.714,
+   "T2M_MAX": -6.2,
+   "fires_past7": 0.0
+  },
+  {
+   "cell": 50.0,
+   "lat": 29.625,
+   "lon": 79.625,
+   "p": 0.017,
+   "dry_days": 1,
+   "rh7": 74.857,
+   "T2M_MAX": 25.1,
+   "fires_past7": 0.0
+  },
+  {
+   "cell": 23.0,
+   "lat": 29.125,
+   "lon": 79.875,
+   "p": 0.017,
+   "dry_days": 4,
+   "rh7": 75.571,
+   "T2M_MAX": 23.7,
+   "fires_past7": 0.0
+  },
+  {
+   "cell": 65.0,
+   "lat": 29.875,
+   "lon": 79.875,
+   "p": 0.017,
+   "dry_days": 1,
+   "rh7": 67.571,
+   "T2M_MAX": 26.2,
+   "fires_past7": 0.0
+  },
+  {
    "cell": 90.0,
    "lat": 30.375,
    "lon": 79.125,
-   "p": 0.018,
+   "p": 0.016,
    "dry_days": 1,
    "rh7": 59.429,
    "T2M_MAX": 16.4,
@@ -186,80 +206,10 @@
    "cell": 61.0,
    "lat": 29.875,
    "lon": 78.875,
-   "p": 0.017,
+   "p": 0.015,
    "dry_days": 1,
    "rh7": 76.286,
    "T2M_MAX": 22.1,
-   "fires_past7": 0.0
-  },
-  {
-   "cell": 131.0,
-   "lat": 31.125,
-   "lon": 78.875,
-   "p": 0.017,
-   "dry_days": 4,
-   "rh7": 60.714,
-   "T2M_MAX": -6.2,
-   "fires_past7": 0.0
-  },
-  {
-   "cell": 23.0,
-   "lat": 29.125,
-   "lon": 79.875,
-   "p": 0.016,
-   "dry_days": 4,
-   "rh7": 75.571,
-   "T2M_MAX": 23.7,
-   "fires_past7": 0.0
-  },
-  {
-   "cell": 99.0,
-   "lat": 30.625,
-   "lon": 77.875,
-   "p": 0.016,
-   "dry_days": 4,
-   "rh7": 75.571,
-   "T2M_MAX": 22.6,
-   "fires_past7": 0.0
-  },
-  {
-   "cell": 129.0,
-   "lat": 31.125,
-   "lon": 78.375,
-   "p": 0.016,
-   "dry_days": 1,
-   "rh7": 57.429,
-   "T2M_MAX": 13.3,
-   "fires_past7": 0.0
-  },
-  {
-   "cell": 52.0,
-   "lat": 29.625,
-   "lon": 80.125,
-   "p": 0.016,
-   "dry_days": 4,
-   "rh7": 74.714,
-   "T2M_MAX": 27.7,
-   "fires_past7": 0.0
-  },
-  {
-   "cell": 77.0,
-   "lat": 30.125,
-   "lon": 79.375,
-   "p": 0.015,
-   "dry_days": 4,
-   "rh7": 70.286,
-   "T2M_MAX": 23.1,
-   "fires_past7": 0.0
-  },
-  {
-   "cell": 116.0,
-   "lat": 30.875,
-   "lon": 78.625,
-   "p": 0.015,
-   "dry_days": 1,
-   "rh7": 56.143,
-   "T2M_MAX": 11.7,
    "fires_past7": 0.0
   },
   {
@@ -273,10 +223,80 @@
    "fires_past7": 0.0
   },
   {
+   "cell": 116.0,
+   "lat": 30.875,
+   "lon": 78.625,
+   "p": 0.015,
+   "dry_days": 1,
+   "rh7": 56.143,
+   "T2M_MAX": 11.7,
+   "fires_past7": 0.0
+  },
+  {
+   "cell": 142.0,
+   "lat": 31.375,
+   "lon": 78.125,
+   "p": 0.013,
+   "dry_days": 1,
+   "rh7": 69.571,
+   "T2M_MAX": 3.8,
+   "fires_past7": 0.0
+  },
+  {
+   "cell": 95.0,
+   "lat": 30.375,
+   "lon": 80.375,
+   "p": 0.013,
+   "dry_days": 4,
+   "rh7": 71.857,
+   "T2M_MAX": -9.6,
+   "fires_past7": 0.0
+  },
+  {
+   "cell": 101.0,
+   "lat": 30.625,
+   "lon": 78.375,
+   "p": 0.013,
+   "dry_days": 4,
+   "rh7": 67.571,
+   "T2M_MAX": 19.9,
+   "fires_past7": 0.0
+  },
+  {
+   "cell": 77.0,
+   "lat": 30.125,
+   "lon": 79.375,
+   "p": 0.013,
+   "dry_days": 4,
+   "rh7": 70.286,
+   "T2M_MAX": 23.1,
+   "fires_past7": 0.0
+  },
+  {
+   "cell": 52.0,
+   "lat": 29.625,
+   "lon": 80.125,
+   "p": 0.013,
+   "dry_days": 4,
+   "rh7": 74.714,
+   "T2M_MAX": 27.7,
+   "fires_past7": 0.0
+  },
+  {
+   "cell": 99.0,
+   "lat": 30.625,
+   "lon": 77.875,
+   "p": 0.013,
+   "dry_days": 4,
+   "rh7": 75.571,
+   "T2M_MAX": 22.6,
+   "fires_past7": 0.0
+  },
+  {
    "cell": 62.0,
    "lat": 29.875,
    "lon": 79.125,
-   "p": 0.015,
+   "p": 0.012,
    "dry_days": 4,
    "rh7": 69.857,
    "T2M_MAX": 20.6,
@@ -286,50 +306,20 @@
    "cell": 104.0,
    "lat": 30.625,
    "lon": 79.125,
-   "p": 0.013,
+   "p": 0.012,
    "dry_days": 1,
    "rh7": 57.0,
    "T2M_MAX": 13.7,
    "fires_past7": 0.0
   },
   {
-   "cell": 47.0,
-   "lat": 29.625,
-   "lon": 78.875,
-   "p": 0.013,
-   "dry_days": 4,
-   "rh7": 80.714,
-   "T2M_MAX": 25.6,
-   "fires_past7": 0.0
-  },
-  {
-   "cell": 142.0,
-   "lat": 31.375,
-   "lon": 78.125,
-   "p": 0.012,
-   "dry_days": 1,
-   "rh7": 69.571,
-   "T2M_MAX": 3.8,
-   "fires_past7": 0.0
-  },
-  {
-   "cell": 88.0,
-   "lat": 30.375,
+   "cell": 130.0,
+   "lat": 31.125,
    "lon": 78.625,
    "p": 0.011,
-   "dry_days": 1,
-   "rh7": 69.857,
-   "T2M_MAX": 19.8,
-   "fires_past7": 0.0
-  },
-  {
-   "cell": 98.0,
-   "lat": 30.625,
-   "lon": 77.625,
-   "p": 0.011,
-   "dry_days": 5,
-   "rh7": 69.0,
-   "T2M_MAX": 21.1,
+   "dry_days": 4,
+   "rh7": 65.714,
+   "T2M_MAX": -7.4,
    "fires_past7": 0.0
   },
   {
@@ -346,50 +336,10 @@
    "cell": 115.0,
    "lat": 30.875,
    "lon": 78.375,
-   "p": 0.011,
+   "p": 0.01,
    "dry_days": 1,
    "rh7": 64.571,
    "T2M_MAX": 7.4,
-   "fires_past7": 0.0
-  },
-  {
-   "cell": 79.0,
-   "lat": 30.125,
-   "lon": 79.875,
-   "p": 0.011,
-   "dry_days": 1,
-   "rh7": 53.0,
-   "T2M_MAX": 14.7,
-   "fires_past7": 0.0
-  },
-  {
-   "cell": 130.0,
-   "lat": 31.125,
-   "lon": 78.625,
-   "p": 0.011,
-   "dry_days": 4,
-   "rh7": 65.714,
-   "T2M_MAX": -7.4,
-   "fires_past7": 0.0
-  },
-  {
-   "cell": 95.0,
-   "lat": 30.375,
-   "lon": 80.375,
-   "p": 0.011,
-   "dry_days": 4,
-   "rh7": 71.857,
-   "T2M_MAX": -9.6,
-   "fires_past7": 0.0
-  },
-  {
-   "cell": 75.0,
-   "lat": 30.125,
-   "lon": 78.875,
-   "p": 0.01,
-   "dry_days": 1,
-   "rh7": 72.143,
-   "T2M_MAX": 21.0,
    "fires_past7": 0.0
   },
   {
@@ -400,6 +350,26 @@
    "dry_days": 1,
    "rh7": 57.714,
    "T2M_MAX": 14.5,
+   "fires_past7": 0.0
+  },
+  {
+   "cell": 79.0,
+   "lat": 30.125,
+   "lon": 79.875,
+   "p": 0.01,
+   "dry_days": 1,
+   "rh7": 53.0,
+   "T2M_MAX": 14.7,
+   "fires_past7": 0.0
+  },
+  {
+   "cell": 81.0,
+   "lat": 30.125,
+   "lon": 80.375,
+   "p": 0.01,
+   "dry_days": 1,
+   "rh7": 59.857,
+   "T2M_MAX": 14.9,
    "fires_past7": 0.0
   },
   {
@@ -423,23 +393,43 @@
    "fires_past7": 0.0
   },
   {
-   "cell": 106.0,
-   "lat": 30.625,
-   "lon": 79.625,
+   "cell": 68.0,
+   "lat": 29.875,
+   "lon": 80.625,
    "p": 0.009,
-   "dry_days": 4,
-   "rh7": 57.857,
-   "T2M_MAX": 6.8,
+   "dry_days": 1,
+   "rh7": 56.143,
+   "T2M_MAX": 16.4,
    "fires_past7": 0.0
   },
   {
-   "cell": 49.0,
-   "lat": 29.625,
-   "lon": 79.375,
-   "p": 0.008,
-   "dry_days": 2,
-   "rh7": 80.429,
-   "T2M_MAX": 20.5,
+   "cell": 75.0,
+   "lat": 30.125,
+   "lon": 78.875,
+   "p": 0.009,
+   "dry_days": 1,
+   "rh7": 72.143,
+   "T2M_MAX": 21.0,
+   "fires_past7": 0.0
+  },
+  {
+   "cell": 88.0,
+   "lat": 30.375,
+   "lon": 78.625,
+   "p": 0.009,
+   "dry_days": 1,
+   "rh7": 69.857,
+   "T2M_MAX": 19.8,
+   "fires_past7": 0.0
+  },
+  {
+   "cell": 76.0,
+   "lat": 30.125,
+   "lon": 79.125,
+   "p": 0.009,
+   "dry_days": 1,
+   "rh7": 68.429,
+   "T2M_MAX": 15.6,
    "fires_past7": 0.0
   },
   {
@@ -453,6 +443,26 @@
    "fires_past7": 0.0
   },
   {
+   "cell": 98.0,
+   "lat": 30.625,
+   "lon": 77.625,
+   "p": 0.008,
+   "dry_days": 5,
+   "rh7": 69.0,
+   "T2M_MAX": 21.1,
+   "fires_past7": 0.0
+  },
+  {
+   "cell": 106.0,
+   "lat": 30.625,
+   "lon": 79.625,
+   "p": 0.008,
+   "dry_days": 4,
+   "rh7": 57.857,
+   "T2M_MAX": 6.8,
+   "fires_past7": 0.0
+  },
+  {
    "cell": 103.0,
    "lat": 30.625,
    "lon": 78.875,
@@ -463,23 +473,23 @@
    "fires_past7": 0.0
   },
   {
-   "cell": 81.0,
-   "lat": 30.125,
-   "lon": 80.375,
+   "cell": 94.0,
+   "lat": 30.375,
+   "lon": 80.125,
    "p": 0.008,
-   "dry_days": 1,
-   "rh7": 59.857,
-   "T2M_MAX": 14.9,
+   "dry_days": 4,
+   "rh7": 68.857,
+   "T2M_MAX": 0.2,
    "fires_past7": 0.0
   },
   {
-   "cell": 68.0,
-   "lat": 29.875,
-   "lon": 80.625,
+   "cell": 47.0,
+   "lat": 29.625,
+   "lon": 78.875,
    "p": 0.008,
-   "dry_days": 1,
-   "rh7": 56.143,
-   "T2M_MAX": 16.4,
+   "dry_days": 4,
+   "rh7": 80.714,
+   "T2M_MAX": 25.6,
    "fires_past7": 0.0
   },
   {
@@ -503,16 +513,6 @@
    "fires_past7": 0.0
   },
   {
-   "cell": 48.0,
-   "lat": 29.625,
-   "lon": 79.125,
-   "p": 0.008,
-   "dry_days": 4,
-   "rh7": 80.429,
-   "T2M_MAX": 23.3,
-   "fires_past7": 0.0
-  },
-  {
    "cell": 105.0,
    "lat": 30.625,
    "lon": 79.375,
@@ -533,43 +533,23 @@
    "fires_past7": 0.0
   },
   {
-   "cell": 76.0,
-   "lat": 30.125,
-   "lon": 79.125,
+   "cell": 49.0,
+   "lat": 29.625,
+   "lon": 79.375,
    "p": 0.007,
-   "dry_days": 1,
-   "rh7": 68.429,
-   "T2M_MAX": 15.6,
+   "dry_days": 2,
+   "rh7": 80.429,
+   "T2M_MAX": 20.5,
    "fires_past7": 0.0
   },
   {
    "cell": 36.0,
    "lat": 29.375,
    "lon": 79.625,
-   "p": 0.007,
+   "p": 0.006,
    "dry_days": 1,
    "rh7": 77.0,
    "T2M_MAX": 19.6,
-   "fires_past7": 0.0
-  },
-  {
-   "cell": 94.0,
-   "lat": 30.375,
-   "lon": 80.125,
-   "p": 0.007,
-   "dry_days": 4,
-   "rh7": 68.857,
-   "T2M_MAX": 0.2,
-   "fires_past7": 0.0
-  },
-  {
-   "cell": 87.0,
-   "lat": 30.375,
-   "lon": 78.375,
-   "p": 0.007,
-   "dry_days": 4,
-   "rh7": 77.429,
-   "T2M_MAX": 19.8,
    "fires_past7": 0.0
   },
   {
@@ -583,23 +563,13 @@
    "fires_past7": 0.0
   },
   {
-   "cell": 59.0,
-   "lat": 29.875,
-   "lon": 78.375,
+   "cell": 48.0,
+   "lat": 29.625,
+   "lon": 79.125,
    "p": 0.006,
    "dry_days": 4,
-   "rh7": 81.286,
-   "T2M_MAX": 24.1,
-   "fires_past7": 0.0
-  },
-  {
-   "cell": 107.0,
-   "lat": 30.625,
-   "lon": 79.875,
-   "p": 0.005,
-   "dry_days": 4,
-   "rh7": 67.143,
-   "T2M_MAX": 5.0,
+   "rh7": 80.429,
+   "T2M_MAX": 23.3,
    "fires_past7": 0.0
   },
   {
@@ -613,33 +583,13 @@
    "fires_past7": 0.0
   },
   {
-   "cell": 46.0,
-   "lat": 29.625,
-   "lon": 78.625,
+   "cell": 107.0,
+   "lat": 30.625,
+   "lon": 79.875,
    "p": 0.005,
    "dry_days": 4,
-   "rh7": 84.143,
-   "T2M_MAX": 24.6,
-   "fires_past7": 0.0
-  },
-  {
-   "cell": 96.0,
-   "lat": 30.375,
-   "lon": 80.625,
-   "p": 0.005,
-   "dry_days": 4,
-   "rh7": 75.429,
-   "T2M_MAX": -3.1,
-   "fires_past7": 0.0
-  },
-  {
-   "cell": 53.0,
-   "lat": 29.625,
-   "lon": 80.375,
-   "p": 0.005,
-   "dry_days": 3,
-   "rh7": 72.714,
-   "T2M_MAX": 21.6,
+   "rh7": 67.143,
+   "T2M_MAX": 5.0,
    "fires_past7": 0.0
   },
   {
@@ -653,6 +603,36 @@
    "fires_past7": 0.0
   },
   {
+   "cell": 53.0,
+   "lat": 29.625,
+   "lon": 80.375,
+   "p": 0.005,
+   "dry_days": 3,
+   "rh7": 72.714,
+   "T2M_MAX": 21.6,
+   "fires_past7": 0.0
+  },
+  {
+   "cell": 87.0,
+   "lat": 30.375,
+   "lon": 78.375,
+   "p": 0.004,
+   "dry_days": 4,
+   "rh7": 77.429,
+   "T2M_MAX": 19.8,
+   "fires_past7": 0.0
+  },
+  {
+   "cell": 96.0,
+   "lat": 30.375,
+   "lon": 80.625,
+   "p": 0.004,
+   "dry_days": 4,
+   "rh7": 75.429,
+   "T2M_MAX": -3.1,
+   "fires_past7": 0.0
+  },
+  {
    "cell": 86.0,
    "lat": 30.375,
    "lon": 78.125,
@@ -663,23 +643,23 @@
    "fires_past7": 0.0
   },
   {
-   "cell": 73.0,
-   "lat": 30.125,
-   "lon": 78.375,
+   "cell": 46.0,
+   "lat": 29.625,
+   "lon": 78.625,
    "p": 0.004,
    "dry_days": 4,
-   "rh7": 81.857,
-   "T2M_MAX": 24.3,
+   "rh7": 84.143,
+   "T2M_MAX": 24.6,
    "fires_past7": 0.0
   },
   {
-   "cell": 132.0,
-   "lat": 31.125,
-   "lon": 79.125,
+   "cell": 59.0,
+   "lat": 29.875,
+   "lon": 78.375,
    "p": 0.004,
    "dry_days": 4,
-   "rh7": 61.714,
-   "T2M_MAX": -0.0,
+   "rh7": 81.286,
+   "T2M_MAX": 24.1,
    "fires_past7": 0.0
   },
   {
@@ -703,23 +683,33 @@
    "fires_past7": 0.0
   },
   {
-   "cell": 60.0,
-   "lat": 29.875,
-   "lon": 78.625,
+   "cell": 132.0,
+   "lat": 31.125,
+   "lon": 79.125,
    "p": 0.003,
-   "dry_days": 0,
-   "rh7": 85.571,
-   "T2M_MAX": 24.2,
+   "dry_days": 4,
+   "rh7": 61.714,
+   "T2M_MAX": -0.0,
    "fires_past7": 0.0
   },
   {
-   "cell": 100.0,
-   "lat": 30.625,
-   "lon": 78.125,
+   "cell": 73.0,
+   "lat": 30.125,
+   "lon": 78.375,
    "p": 0.003,
-   "dry_days": 1,
-   "rh7": 81.714,
-   "T2M_MAX": 20.2,
+   "dry_days": 4,
+   "rh7": 81.857,
+   "T2M_MAX": 24.3,
+   "fires_past7": 0.0
+  },
+  {
+   "cell": 60.0,
+   "lat": 29.875,
+   "lon": 78.625,
+   "p": 0.002,
+   "dry_days": 0,
+   "rh7": 85.571,
+   "T2M_MAX": 24.2,
    "fires_past7": 0.0
   },
   {
@@ -730,6 +720,16 @@
    "dry_days": 0,
    "rh7": 78.857,
    "T2M_MAX": 21.1,
+   "fires_past7": 0.0
+  },
+  {
+   "cell": 100.0,
+   "lat": 30.625,
+   "lon": 78.125,
+   "p": 0.002,
+   "dry_days": 1,
+   "rh7": 81.714,
+   "T2M_MAX": 20.2,
    "fires_past7": 0.0
   },
   {
@@ -753,6 +753,16 @@
    "fires_past7": 0.0
   },
   {
+   "cell": 134.0,
+   "lat": 31.125,
+   "lon": 79.625,
+   "p": 0.001,
+   "dry_days": 4,
+   "rh7": 66.429,
+   "T2M_MAX": -7.6,
+   "fires_past7": 0.0
+  },
+  {
    "cell": 69.0,
    "lat": 29.875,
    "lon": 80.875,
@@ -763,13 +773,13 @@
    "fires_past7": 0.0
   },
   {
-   "cell": 54.0,
-   "lat": 29.625,
-   "lon": 80.625,
+   "cell": 135.0,
+   "lat": 31.125,
+   "lon": 79.875,
    "p": 0.001,
-   "dry_days": 3,
-   "rh7": 66.857,
-   "T2M_MAX": 23.3,
+   "dry_days": 4,
+   "rh7": 58.143,
+   "T2M_MAX": -2.8,
    "fires_past7": 0.0
   },
   {
@@ -780,6 +790,26 @@
    "dry_days": 4,
    "rh7": 72.714,
    "T2M_MAX": -8.8,
+   "fires_past7": 0.0
+  },
+  {
+   "cell": 111.0,
+   "lat": 30.625,
+   "lon": 80.875,
+   "p": 0.001,
+   "dry_days": 4,
+   "rh7": 57.714,
+   "T2M_MAX": 1.9,
+   "fires_past7": 0.0
+  },
+  {
+   "cell": 54.0,
+   "lat": 29.625,
+   "lon": 80.625,
+   "p": 0.001,
+   "dry_days": 3,
+   "rh7": 66.857,
+   "T2M_MAX": 23.3,
    "fires_past7": 0.0
   },
   {
@@ -803,16 +833,6 @@
    "fires_past7": 0.0
   },
   {
-   "cell": 12.0,
-   "lat": 28.875,
-   "lon": 80.625,
-   "p": 0.001,
-   "dry_days": 3,
-   "rh7": 77.714,
-   "T2M_MAX": 24.8,
-   "fires_past7": 0.0
-  },
-  {
    "cell": 138.0,
    "lat": 31.125,
    "lon": 80.625,
@@ -833,13 +853,23 @@
    "fires_past7": 0.0
   },
   {
-   "cell": 150.0,
-   "lat": 31.375,
-   "lon": 80.125,
+   "cell": 12.0,
+   "lat": 28.875,
+   "lon": 80.625,
    "p": 0.001,
-   "dry_days": 4,
-   "rh7": 50.857,
-   "T2M_MAX": -1.8,
+   "dry_days": 3,
+   "rh7": 77.714,
+   "T2M_MAX": 24.8,
+   "fires_past7": 0.0
+  },
+  {
+   "cell": 124.0,
+   "lat": 30.875,
+   "lon": 80.625,
+   "p": 0.001,
+   "dry_days": 37,
+   "rh7": 56.286,
+   "T2M_MAX": 4.2,
    "fires_past7": 0.0
   },
   {
@@ -873,16 +903,6 @@
    "fires_past7": 0.0
   },
   {
-   "cell": 124.0,
-   "lat": 30.875,
-   "lon": 80.625,
-   "p": 0.001,
-   "dry_days": 37,
-   "rh7": 56.286,
-   "T2M_MAX": 4.2,
-   "fires_past7": 0.0
-  },
-  {
    "cell": 119.0,
    "lat": 30.875,
    "lon": 79.375,
@@ -893,13 +913,23 @@
    "fires_past7": 0.0
   },
   {
-   "cell": 120.0,
+   "cell": 121.0,
    "lat": 30.875,
-   "lon": 79.625,
+   "lon": 79.875,
    "p": 0.001,
    "dry_days": 4,
-   "rh7": 75.0,
-   "T2M_MAX": -19.8,
+   "rh7": 66.429,
+   "T2M_MAX": -4.7,
+   "fires_past7": 0.0
+  },
+  {
+   "cell": 150.0,
+   "lat": 31.375,
+   "lon": 80.125,
+   "p": 0.001,
+   "dry_days": 4,
+   "rh7": 50.857,
+   "T2M_MAX": -1.8,
    "fires_past7": 0.0
   },
   {
@@ -913,6 +943,16 @@
    "fires_past7": 0.0
   },
   {
+   "cell": 120.0,
+   "lat": 30.875,
+   "lon": 79.625,
+   "p": 0.001,
+   "dry_days": 4,
+   "rh7": 75.0,
+   "T2M_MAX": -19.8,
+   "fires_past7": 0.0
+  },
+  {
    "cell": 146.0,
    "lat": 31.375,
    "lon": 79.125,
@@ -920,6 +960,16 @@
    "dry_days": 4,
    "rh7": 63.857,
    "T2M_MAX": -3.3,
+   "fires_past7": 0.0
+  },
+  {
+   "cell": 55.0,
+   "lat": 29.625,
+   "lon": 80.875,
+   "p": 0.001,
+   "dry_days": 1,
+   "rh7": 59.143,
+   "T2M_MAX": 15.5,
    "fires_past7": 0.0
   },
   {
@@ -953,46 +1003,6 @@
    "fires_past7": 0.0
   },
   {
-   "cell": 151.0,
-   "lat": 31.375,
-   "lon": 80.375,
-   "p": 0.001,
-   "dry_days": 4,
-   "rh7": 61.143,
-   "T2M_MAX": -6.2,
-   "fires_past7": 0.0
-  },
-  {
-   "cell": 121.0,
-   "lat": 30.875,
-   "lon": 79.875,
-   "p": 0.001,
-   "dry_days": 4,
-   "rh7": 66.429,
-   "T2M_MAX": -4.7,
-   "fires_past7": 0.0
-  },
-  {
-   "cell": 55.0,
-   "lat": 29.625,
-   "lon": 80.875,
-   "p": 0.001,
-   "dry_days": 1,
-   "rh7": 59.143,
-   "T2M_MAX": 15.5,
-   "fires_past7": 0.0
-  },
-  {
-   "cell": 134.0,
-   "lat": 31.125,
-   "lon": 79.625,
-   "p": 0.001,
-   "dry_days": 4,
-   "rh7": 66.429,
-   "T2M_MAX": -7.6,
-   "fires_past7": 0.0
-  },
-  {
    "cell": 152.0,
    "lat": 31.375,
    "lon": 80.625,
@@ -1003,16 +1013,6 @@
    "fires_past7": 0.0
   },
   {
-   "cell": 135.0,
-   "lat": 31.125,
-   "lon": 79.875,
-   "p": 0.001,
-   "dry_days": 4,
-   "rh7": 58.143,
-   "T2M_MAX": -2.8,
-   "fires_past7": 0.0
-  },
-  {
    "cell": 147.0,
    "lat": 31.375,
    "lon": 79.375,
@@ -1020,6 +1020,16 @@
    "dry_days": 4,
    "rh7": 55.571,
    "T2M_MAX": -3.8,
+   "fires_past7": 0.0
+  },
+  {
+   "cell": 151.0,
+   "lat": 31.375,
+   "lon": 80.375,
+   "p": 0.001,
+   "dry_days": 4,
+   "rh7": 61.143,
+   "T2M_MAX": -6.2,
    "fires_past7": 0.0
   },
   {
@@ -1063,6 +1073,16 @@
    "fires_past7": 0.0
   },
   {
+   "cell": 13.0,
+   "lat": 28.875,
+   "lon": 80.875,
+   "p": 0.001,
+   "dry_days": 3,
+   "rh7": 74.429,
+   "T2M_MAX": 24.1,
+   "fires_past7": 0.0
+  },
+  {
    "cell": 108.0,
    "lat": 30.625,
    "lon": 80.125,
@@ -1083,16 +1103,6 @@
    "fires_past7": 0.0
   },
   {
-   "cell": 13.0,
-   "lat": 28.875,
-   "lon": 80.875,
-   "p": 0.001,
-   "dry_days": 3,
-   "rh7": 74.429,
-   "T2M_MAX": 24.1,
-   "fires_past7": 0.0
-  },
-  {
    "cell": 125.0,
    "lat": 30.875,
    "lon": 80.875,
@@ -1100,16 +1110,6 @@
    "dry_days": 4,
    "rh7": 55.714,
    "T2M_MAX": 1.7,
-   "fires_past7": 0.0
-  },
-  {
-   "cell": 111.0,
-   "lat": 30.625,
-   "lon": 80.875,
-   "p": 0.001,
-   "dry_days": 4,
-   "rh7": 57.714,
-   "T2M_MAX": 1.9,
    "fires_past7": 0.0
   },
   {
@@ -1138,81 +1138,81 @@
    "cell": 140,
    "lat": 31.375,
    "lon": 77.625,
-   "p": 0.094,
-   "en": "VAN AGNI LOW fire risk (9%) near 31.38N 77.62E, next 7 days. Why: seasonal risk. Advisory only: verify with beat staff.",
-   "hi": "वन अग्नि: 31.38N 77.62E के पास अगले 7 दिन निम्न आग जोखिम (9%). कारण: मौसमी जोखिम. केवल सलाह: बीट स्टाफ से पुष्टि करें."
-  },
-  {
-   "cell": 127,
-   "lat": 31.125,
-   "lon": 77.875,
-   "p": 0.076,
-   "en": "VAN AGNI LOW fire risk (7%) near 31.12N 77.88E, next 7 days. Why: seasonal risk. Advisory only: verify with beat staff.",
-   "hi": "वन अग्नि: 31.12N 77.88E के पास अगले 7 दिन निम्न आग जोखिम (7%). कारण: मौसमी जोखिम. केवल सलाह: बीट स्टाफ से पुष्टि करें."
+   "p": 0.081,
+   "en": "VAN AGNI LOW fire risk (8%) near 31.38N 77.62E, next 7 days. Why: seasonal risk. Advisory only: verify with beat staff.",
+   "hi": "वन अग्नि: 31.38N 77.62E के पास अगले 7 दिन निम्न आग जोखिम (8%). कारण: मौसमी जोखिम. केवल सलाह: बीट स्टाफ से पुष्टि करें."
   },
   {
    "cell": 141,
    "lat": 31.375,
    "lon": 77.875,
-   "p": 0.07,
-   "en": "VAN AGNI LOW fire risk (6%) near 31.38N 77.88E, next 7 days. Why: seasonal risk. Advisory only: verify with beat staff.",
-   "hi": "वन अग्नि: 31.38N 77.88E के पास अगले 7 दिन निम्न आग जोखिम (6%). कारण: मौसमी जोखिम. केवल सलाह: बीट स्टाफ से पुष्टि करें."
-  },
-  {
-   "cell": 112,
-   "lat": 30.875,
-   "lon": 77.625,
-   "p": 0.068,
-   "en": "VAN AGNI LOW fire risk (6%) near 30.88N 77.62E, next 7 days. Why: seasonal risk. Advisory only: verify with beat staff.",
-   "hi": "वन अग्नि: 30.88N 77.62E के पास अगले 7 दिन निम्न आग जोखिम (6%). कारण: मौसमी जोखिम. केवल सलाह: बीट स्टाफ से पुष्टि करें."
-  },
-  {
-   "cell": 126,
-   "lat": 31.125,
-   "lon": 77.625,
    "p": 0.059,
-   "en": "VAN AGNI LOW fire risk (5%) near 31.12N 77.62E, next 7 days. Why: seasonal risk. Advisory only: verify with beat staff.",
-   "hi": "वन अग्नि: 31.12N 77.62E के पास अगले 7 दिन निम्न आग जोखिम (5%). कारण: मौसमी जोखिम. केवल सलाह: बीट स्टाफ से पुष्टि करें."
+   "en": "VAN AGNI LOW fire risk (5%) near 31.38N 77.88E, next 7 days. Why: seasonal risk. Advisory only: verify with beat staff.",
+   "hi": "वन अग्नि: 31.38N 77.88E के पास अगले 7 दिन निम्न आग जोखिम (5%). कारण: मौसमी जोखिम. केवल सलाह: बीट स्टाफ से पुष्टि करें."
   },
   {
    "cell": 128,
    "lat": 31.125,
    "lon": 78.125,
-   "p": 0.056,
-   "en": "VAN AGNI LOW fire risk (5%) near 31.12N 78.12E, next 7 days. Why: seasonal risk. Advisory only: verify with beat staff.",
-   "hi": "वन अग्नि: 31.12N 78.12E के पास अगले 7 दिन निम्न आग जोखिम (5%). कारण: मौसमी जोखिम. केवल सलाह: बीट स्टाफ से पुष्टि करें."
+   "p": 0.042,
+   "en": "VAN AGNI LOW fire risk (4%) near 31.12N 78.12E, next 7 days. Why: seasonal risk. Advisory only: verify with beat staff.",
+   "hi": "वन अग्नि: 31.12N 78.12E के पास अगले 7 दिन निम्न आग जोखिम (4%). कारण: मौसमी जोखिम. केवल सलाह: बीट स्टाफ से पुष्टि करें."
+  },
+  {
+   "cell": 127,
+   "lat": 31.125,
+   "lon": 77.875,
+   "p": 0.039,
+   "en": "VAN AGNI LOW fire risk (3%) near 31.12N 77.88E, next 7 days. Why: seasonal risk. Advisory only: verify with beat staff.",
+   "hi": "वन अग्नि: 31.12N 77.88E के पास अगले 7 दिन निम्न आग जोखिम (3%). कारण: मौसमी जोखिम. केवल सलाह: बीट स्टाफ से पुष्टि करें."
+  },
+  {
+   "cell": 112,
+   "lat": 30.875,
+   "lon": 77.625,
+   "p": 0.033,
+   "en": "VAN AGNI LOW fire risk (3%) near 30.88N 77.62E, next 7 days. Why: seasonal risk. Advisory only: verify with beat staff.",
+   "hi": "वन अग्नि: 30.88N 77.62E के पास अगले 7 दिन निम्न आग जोखिम (3%). कारण: मौसमी जोखिम. केवल सलाह: बीट स्टाफ से पुष्टि करें."
   },
   {
    "cell": 85,
    "lat": 30.375,
    "lon": 77.875,
-   "p": 0.048,
-   "en": "VAN AGNI LOW fire risk (4%) near 30.38N 77.88E, next 7 days. Why: seasonal risk. Advisory only: verify with beat staff.",
-   "hi": "वन अग्नि: 30.38N 77.88E के पास अगले 7 दिन निम्न आग जोखिम (4%). कारण: मौसमी जोखिम. केवल सलाह: बीट स्टाफ से पुष्टि करें."
+   "p": 0.029,
+   "en": "VAN AGNI LOW fire risk (2%) near 30.38N 77.88E, next 7 days. Why: seasonal risk. Advisory only: verify with beat staff.",
+   "hi": "वन अग्नि: 30.38N 77.88E के पास अगले 7 दिन निम्न आग जोखिम (2%). कारण: मौसमी जोखिम. केवल सलाह: बीट स्टाफ से पुष्टि करें."
   },
   {
-   "cell": 113,
-   "lat": 30.875,
-   "lon": 77.875,
-   "p": 0.047,
-   "en": "VAN AGNI LOW fire risk (4%) near 30.88N 77.88E, next 7 days. Why: seasonal risk. Advisory only: verify with beat staff.",
-   "hi": "वन अग्नि: 30.88N 77.88E के पास अगले 7 दिन निम्न आग जोखिम (4%). कारण: मौसमी जोखिम. केवल सलाह: बीट स्टाफ से पुष्टि करें."
-  },
-  {
-   "cell": 114,
-   "lat": 30.875,
-   "lon": 78.125,
-   "p": 0.033,
-   "en": "VAN AGNI LOW fire risk (3%) near 30.88N 78.12E, next 7 days. Why: seasonal risk. Advisory only: verify with beat staff.",
-   "hi": "वन अग्नि: 30.88N 78.12E के पास अगले 7 दिन निम्न आग जोखिम (3%). कारण: मौसमी जोखिम. केवल सलाह: बीट स्टाफ से पुष्टि करें."
+   "cell": 126,
+   "lat": 31.125,
+   "lon": 77.625,
+   "p": 0.029,
+   "en": "VAN AGNI LOW fire risk (2%) near 31.12N 77.62E, next 7 days. Why: seasonal risk. Advisory only: verify with beat staff.",
+   "hi": "वन अग्नि: 31.12N 77.62E के पास अगले 7 दिन निम्न आग जोखिम (2%). कारण: मौसमी जोखिम. केवल सलाह: बीट स्टाफ से पुष्टि करें."
   },
   {
    "cell": 67,
    "lat": 29.875,
    "lon": 80.375,
-   "p": 0.032,
-   "en": "VAN AGNI LOW fire risk (3%) near 29.88N 80.38E, next 7 days. Why: seasonal risk. Advisory only: verify with beat staff.",
-   "hi": "वन अग्नि: 29.88N 80.38E के पास अगले 7 दिन निम्न आग जोखिम (3%). कारण: मौसमी जोखिम. केवल सलाह: बीट स्टाफ से पुष्टि करें."
+   "p": 0.027,
+   "en": "VAN AGNI LOW fire risk (2%) near 29.88N 80.38E, next 7 days. Why: seasonal risk. Advisory only: verify with beat staff.",
+   "hi": "वन अग्नि: 29.88N 80.38E के पास अगले 7 दिन निम्न आग जोखिम (2%). कारण: मौसमी जोखिम. केवल सलाह: बीट स्टाफ से पुष्टि करें."
+  },
+  {
+   "cell": 113,
+   "lat": 30.875,
+   "lon": 77.875,
+   "p": 0.025,
+   "en": "VAN AGNI LOW fire risk (2%) near 30.88N 77.88E, next 7 days. Why: seasonal risk. Advisory only: verify with beat staff.",
+   "hi": "वन अग्नि: 30.88N 77.88E के पास अगले 7 दिन निम्न आग जोखिम (2%). कारण: मौसमी जोखिम. केवल सलाह: बीट स्टाफ से पुष्टि करें."
+  },
+  {
+   "cell": 66,
+   "lat": 29.875,
+   "lon": 80.125,
+   "p": 0.022,
+   "en": "VAN AGNI LOW fire risk (2%) near 29.88N 80.12E, next 7 days. Why: seasonal risk. Advisory only: verify with beat staff.",
+   "hi": "वन अग्नि: 29.88N 80.12E के पास अगले 7 दिन निम्न आग जोखिम (2%). कारण: मौसमी जोखिम. केवल सलाह: बीट स्टाफ से पुष्टि करें."
   }
  ]
 }
