@@ -1,0 +1,14 @@
+# Model card: Van Agni LightGBM v1
+- **Task**: binary. Will a NASA FIRMS MODIS vegetation fire be detected in this 0.25° cell in the next 7 days?
+- **Unit**: cell-day. 113 cells (Uttarakhand, elevation ≥ 500 m).
+- **Training data**: 2019-2023 (206,338 cell-days). Validation 2024, test 2025.
+- **Features**: fires_past7, hist_rate, rh7, RH2M, rain30, rain90, doy, elev, tmax7, dry_days, rain7, lat, lon, T2M_MAX, WS10M_MAX.
+- **Most important**: fire points last 7 days, historic fire rate, 7-day humidity, today's humidity, 30-day rain.
+- **Performance (2025 test)**: AUC 0.909, PR-AUC 0.273, top-10 patrol recall 0.332 vs baseline 0.204.
+- **Intended use**: ranking where to send patrols and fire watchers. Advisory only; a forest officer decides.
+- **Not for**: evacuation orders, insurance, blame, or anything about individual people.
+- **Personal data**: none. Only satellite points, weather and elevation.
+- **Fairness**: risk is spatial. Remote high-altitude cells have fewer past detections (cloud, terrain), so the historic-rate feature can under-rank them; the weather features partly correct this. Reviewed per district before use.
+- **Known failure modes**: cloud cover hides fires; small surface fires missed; off-season scores are low by design.
+- **Human oversight**: every alert says "Advisory only: verify with beat staff". No automatic action.
+- **Energy**: training 2.74e-05 kWh (CodeCarbon). Retrain yearly before the fire season.

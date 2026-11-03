@@ -1,0 +1,30 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Van Agni | वन अग्नि : forest fire early warning (Uttarakhand pilot)</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>body{margin:0;font-family:system-ui,sans-serif;background:#0f1a12;color:#eee}header{padding:10px 14px;background:#183020}
+h1{margin:0;font-size:20px}small{color:#9c9}#wrap{display:flex;flex-wrap:wrap}#map{height:72vh;flex:2 1 480px}
+#side{flex:1 1 320px;padding:10px 14px;max-height:72vh;overflow:auto}select,button{font-size:15px;padding:4px}
+.a{border-left:4px solid #e33;margin:8px 0;padding:6px 8px;background:#1c2a20;font-size:14px}.hi{color:#fc9}
+.legend{background:#fff;color:#000;padding:6px;font-size:12px;line-height:18px}.legend i{display:inline-block;width:14px;height:14px;margin-right:4px}
+footer{padding:8px 14px;font-size:12px;color:#9a9}</style></head><body>
+<header><h1>Van Agni | वन अग्नि</h1><small>7-day forest fire risk for every 0.25° cell (~27 km) of Uttarakhand above 500 m. Advisory only, a human verifies every alert.</small><br>
+<label>View: <select id="v"><option value="live">Live (today)</option><option value="replay_2024-04-22">Replay 22 Apr 2024 (peak season)</option><option value="replay_2025-04-01">Replay 1 Apr 2025 (held-out test year)</option></select></label>
+<span id="meta"></span></header>
+<div id="wrap"><div id="map"></div><div id="side"><h3>Top 10 cells to patrol</h3><div id="alerts"></div></div></div>
+<footer>Data: NASA FIRMS MODIS active fire (Fire Information for Resource Management System), NASA POWER and Open-Meteo weather, Open-Meteo elevation. Model: LightGBM. Code: <a style="color:#9cf" href="https://github.com/akshay-ira-2026/van-agni">github.com/akshay-ira-2026/van-agni</a></footer>
+<script>
+const map=L.map('map').setView([30.1,79.2],8);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap'}).addTo(map);
+let layer=L.layerGroup().addTo(map);const H=0.125;
+function col(p){return p>=.5?'#d7191c':p>=.25?'#fd8d3c':p>=.1?'#fecc5c':'#a6d96a'}
+const lg=L.control({position:'bottomleft'});lg.onAdd=()=>{const d=L.DomUtil.create('div','legend');d.innerHTML='<i style="background:#d7191c"></i>Very high ≥50%<br><i style="background:#fd8d3c"></i>High 25-50%<br><i style="background:#fecc5c"></i>Moderate 10-25%<br><i style="background:#a6d96a"></i>Low &lt;10%<br><i style="border:2px solid #00f"></i>Fire actually seen next 7 days (replay)';return d};lg.addTo(map);
+async function load(n){const j=await (await fetch(n+'.json?'+Date.now())).json();layer.clearLayers();
+ const act=new Set(j.actual_fire_cells_next7||[]);
+ j.cells.forEach(c=>{L.rectangle([[c.lat-H,c.lon-H],[c.lat+H,c.lon+H]],{color:act.has(c.cell)?'#00f':'#333',weight:act.has(c.cell)?3:.4,fillColor:col(c.p),fillOpacity:.6})
+  .bindPopup(`<b>Cell ${c.cell}</b><br>Risk next 7 days: <b>${Math.round(c.p*100)}%</b><br>Dry days: ${c.dry_days}<br>Humidity (7-day avg): ${Math.round(c.rh7)}%<br>Max temp: ${c.T2M_MAX} °C<br>Fire points past 7 days: ${c.fires_past7}`).addTo(layer)});
+ let hit='';if(j.actual_fire_cells_next7){const t=new Set(j.top10.map(x=>x.cell));const h=[...t].filter(x=>act.has(x)).length;hit=` · fires actually seen next 7 days in ${act.size} cells, ${h} of top 10 were right`}
+ document.getElementById('meta').textContent=` · scored for ${j.date}${hit}`;
+ document.getElementById('alerts').innerHTML=j.top10.map((a,i)=>`<div class="a"><b>#${i+1}</b> ${a.en}<div class="hi">${a.hi}</div></div>`).join('');}
+document.getElementById('v').onchange=e=>load(e.target.value);load('live');
+</script></body></html>
