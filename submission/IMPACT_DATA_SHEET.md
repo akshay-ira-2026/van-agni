@@ -4,7 +4,7 @@ Boundary: model training and scoring on our machine (CPU and RAM). Excludes data
 
 ## Training
 - Hardware: AMD Ryzen 7 9700X, 2 cores, no GPU, 3.8 GB RAM
-- Runtime: 1.81 s
+- Runtime: 4.6 s
 - Region: India
 - Energy: 2.301e-04 kWh
 - Grid intensity used: 713 gCO2e/kWh (CodeCarbon 3.3.2 built-in India mix, run date 3 Nov 2026)

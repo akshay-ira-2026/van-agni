@@ -21,7 +21,7 @@
 ## Competition and edge
 - FSI FAST alerts detect fires already burning; Van Agni predicts the next 7 days. They work together: FSI tells where fire is, Van Agni where to patrol first.
 - Global tools (e.g. fire weather indices) are not tuned to Indian fire records or delivered in Hindi to beat guards.
-- Edge: tiny compute footprint (0.000027 kWh to train), explainable alerts, offline and SMS delivery.
+- Edge: tiny compute footprint (0.000230 kWh to train), explainable alerts, offline and SMS delivery.
 
 ## Risks and answers
 - Slow government buying: start with a pilot paid from existing FFPM or CSR money; publish results.
