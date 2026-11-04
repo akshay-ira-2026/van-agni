@@ -4,7 +4,7 @@
 - **Training data**: 2019-2023 (206,338 cell-days). Validation 2024, test 2025.
 - **Features**: fires_past7, hist_rate, rh7, RH2M, rain30, rain90, doy, elev, tmax7, dry_days, rain7, lat, lon, T2M_MAX, WS10M_MAX.
 - **Most important**: fire points last 7 days, historic fire rate, 7-day humidity, today's humidity, 30-day rain.
-- **Performance (2025 test)**: AUC 0.909, PR-AUC 0.273, top-10 patrol recall 0.332 vs baseline 0.204.
+- **Performance (2025 test)**: AUC 0.914, PR-AUC 0.296, top-10 patrol recall 0.386 vs baseline 0.204.
 - **Intended use**: ranking where to send patrols and fire watchers. Advisory only; a forest officer decides.
 - **Not for**: evacuation orders, insurance, blame, or anything about individual people.
 - **Personal data**: none. Only satellite points, weather and elevation.

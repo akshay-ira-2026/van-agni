@@ -19,15 +19,15 @@ Van Agni scores every 0.25° grid cell (about 27 km) of Uttarakhand above 500 m 
 7. **Dashboard** (`docs/index.html`): Leaflet map on GitHub Pages; a GitHub Action rescores live every day at 06:00 IST (Indian Standard Time).
 
 ## Results (held-out year 2025, never seen in training)
-- ROC-AUC (area under the receiver operating curve): **0.909** (fire season Feb-Jun: 0.882)
-- PR-AUC (precision-recall area): **0.273** against a base rate of 0.047
-- Patrol the model's top 10 cells each day: catches **33.2%** of next-week fire cells, vs **20.4%** for the "historically worst 10 cells" baseline (+63%).
-- Validation 2024: AUC 0.941, top-10 recall 31.3% vs 27.2%.
+- ROC-AUC (area under the receiver operating curve): **0.914** (fire season Feb-Jun: 0.885)
+- PR-AUC (precision-recall area): **0.296** against a base rate of 0.047
+- Patrol the model's top 10 cells each day: catches **38.6%** of next-week fire cells, vs **20.4%** for the "historically worst 10 cells" baseline (+89%).
+- Validation 2024: AUC 0.945, top-10 recall 31.2% vs 27.2%.
 - Replay 22 Apr 2024: all 10 of the top 10 cells had real fires in the next 7 days.
 
 ## Measured footprint (CodeCarbon 3.3.2, offline, India grid)
-- Training: 2.74e-05 kWh, 0.0195 gCO2e, 1.81 s on 2 CPU cores, no GPU.
-- Inference: 2.44e-08 kWh and 1.74e-05 gCO2e per 1,000 cell-scores.
+- Training: 2.30e-04 kWh, 0.164 gCO2e, 4.6 s on 2 CPU cores, no GPU.
+- Inference: 8.72e-08 kWh and 6.22e-05 gCO2e per 1,000 cell-scores.
 - Raw logs: `outputs/codecarbon_train.csv`, `outputs/codecarbon_infer.csv`.
 
 ## Run it
@@ -63,3 +63,9 @@ Code MIT. Data: NASA FIRMS and NASA POWER (NASA open data), Open-Meteo (CC BY 4.
 
 - Screen recording of the demo (silent, narrate with WALKTHROUGH_SCRIPT.md): `submission/DEMO_RECORDING.mp4`
 - Narrated walkthrough video with captions (Stage 3): `submission/WALKTHROUGH_VIDEO.mp4`
+
+## Model v2 (4 Nov 2026): VIIRS 375 m satellite signal
+- Added NASA VIIRS (Visible Infrared Imaging Radiometer Suite) S-NPP 375 m detections and fire radiative power: past 3 and 7 day counts, 7-day FRP (Fire Radiative Power), a vapour pressure deficit proxy and each cell's VIIRS fire history (training years only).
+- All new inputs come from the public 7-day near-real-time feed, so the daily live job uses them too.
+- 2025 held-out: AUC 0.914 (was 0.909), PR-AUC 0.296 (was 0.273), top-10 patrol recall 38.6% (was 33.2%) vs 20.4% baseline.
+- Archive: data/firms_viirs_snpp_uttarakhand_2019_2025.csv.gz (116,060 detections, 2019-2025).

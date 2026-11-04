@@ -25,6 +25,25 @@ def fetch_firms():
                 print('FIRMS fetch failed', u, k, e, file=sys.stderr); time.sleep(10)
     print('FIRMS unavailable: scoring on weather and history only', file=sys.stderr)
     return pd.DataFrame(columns=['latitude', 'longitude', 'acq_date', 'confidence'])
+VIIRS_URLS = ['https://firms.modaps.eosdis.nasa.gov/data/active_fire/suomi-npp-viirs-c2/csv/SUOMI_VIIRS_C2_South_Asia_7d.csv',
+              'https://firms2.modaps.eosdis.nasa.gov/data/active_fire/suomi-npp-viirs-c2/csv/SUOMI_VIIRS_C2_South_Asia_7d.csv']
+VIIRS_ARCHIVE = 'data/firms_viirs_snpp_uttarakhand_2019_2025.csv.gz'
+VIIRS_SOURCE = 'none'
+
+def fetch_viirs():
+    global VIIRS_SOURCE
+    for u in VIIRS_URLS:
+        for k in range(3):
+            try:
+                r = HTTP.get(u, timeout=120); r.raise_for_status()
+                f = pd.read_csv(io.StringIO(r.text))
+                if {'latitude', 'longitude', 'acq_date', 'frp', 'confidence'} <= set(f.columns):
+                    f = f[f.latitude.between(28.7, 31.5) & f.longitude.between(77.5, 81.1)]
+                    VIIRS_SOURCE = u.split('/')[-1]; return f
+            except Exception as e:
+                print('VIIRS fetch failed', u, k, e, file=sys.stderr); time.sleep(10)
+    print('VIIRS unavailable: VIIRS features set to 0', file=sys.stderr)
+    return pd.DataFrame(columns=['latitude', 'longitude', 'acq_date', 'confidence', 'frp'])
 sys.path.insert(0, 'src'); from features import *; from alerts import alert
 model = joblib.load('outputs/van_agni_lgbm.joblib')
 grid = pd.read_csv('data/grid.csv'); g = grid[grid.elev >= 500].reset_index(drop=True)
@@ -33,7 +52,7 @@ TRAIN = [2019, 2020, 2021, 2022, 2023]
 def hist_rates():
     w = pd.read_csv('data/weather_power_daily_2019_2025.csv.gz')
     fires = load_fires('data/firms_modis_uttarakhand_2019_2025.csv')
-    df = build(grid, w, fires); df = add_history(df, TRAIN)
+    df = build(grid, w, fires); df = add_viirs(df, grid, load_viirs_df(pd.read_csv(VIIRS_ARCHIVE))); df = add_history(df, TRAIN)
     return df
 
 def live():
@@ -54,8 +73,9 @@ def live():
     f['confidence'] = pd.to_numeric(f.confidence, errors='coerce').fillna(50)
     fires = load_fires_df(f)
     df = build_nolabel(grid, w, fires)
-    hr = hist_rates().groupby('cell').hist_rate.first()
-    df = df.merge(hr, on='cell', how='left').fillna({'hist_rate': 0})
+    df = add_viirs(df, grid, load_viirs_df(fetch_viirs()))
+    hr = hist_rates().groupby('cell')[['hist_rate', 'viirs_hist_rate']].first().reset_index()
+    df = df.merge(hr, on='cell', how='left').fillna({'hist_rate': 0, 'viirs_hist_rate': 0})
     return df[df.date == df.date.max()]
 
 def load_fires_df(f):
@@ -94,8 +114,9 @@ if __name__ == '__main__':
     top = []
     for _, r in d.head(10).iterrows():
         e, h = alert(r.to_dict()); top.append({'cell': int(r.cell), 'lat': r.lat, 'lon': r.lon, 'p': round(float(r.p), 3), 'en': e, 'hi': h})
-    cells = d[['cell', 'lat', 'lon', 'p', 'dry_days', 'rh7', 'T2M_MAX', 'fires_past7']].round(3).to_dict('records')
-    out = {'mode': mode, 'date': day, 'cells': cells, 'top10': top}
+    cells = d[['cell', 'lat', 'lon', 'p', 'dry_days', 'rh7', 'T2M_MAX', 'fires_past7', 'viirs_past7', 'frp_past7']].round(3).to_dict('records')
+    out = {'mode': mode, 'date': day, 'cells': cells, 'top10': top, 'model': 'lightgbm-v2-viirs'}
+    if mode == 'live': out['sources'] = {'fires_7d': FIRE_SOURCE, 'viirs_7d': VIIRS_SOURCE}
     if mode != 'live':
         out['actual_fire_cells_next7'] = d[d.y == 1].cell.astype(int).tolist()
     name = 'live' if mode == 'live' else 'replay_' + day

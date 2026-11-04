@@ -9,6 +9,7 @@ grid = pd.read_csv('data/grid.csv')
 weather = pd.read_csv('data/weather_power_daily_2019_2025.csv.gz')
 fires = load_fires('data/firms_modis_uttarakhand_2019_2025.csv')
 df = build(grid, weather, fires)
+df = add_viirs(df, grid, load_viirs_df(pd.read_csv('data/firms_viirs_snpp_uttarakhand_2019_2025.csv.gz')))
 TRAIN = [2019, 2020, 2021, 2022, 2023]
 df = add_history(df, TRAIN)
 yr = df.date.dt.year

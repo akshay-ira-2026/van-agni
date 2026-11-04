@@ -11,4 +11,4 @@ What is pinned
 - Raw CodeCarbon output: `outputs/codecarbon_train.csv`, `outputs/codecarbon_infer.csv`.
 - Tests: `python -m pytest -q tests`.
 
-Expected results (2025 test year): AUC (Area Under the Curve) 0.909, top-10 patrol recall 33.2% vs 20.4% for the historical-hotspot baseline. Small differences in the 3rd decimal can come from library versions.
+Expected results (2025 test year): AUC (Area Under the Curve) 0.914, top-10 patrol recall 38.6% vs 20.4% for the historical-hotspot baseline. Small differences in the 3rd decimal can come from library versions.

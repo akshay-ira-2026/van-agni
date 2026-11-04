@@ -11,7 +11,7 @@
 
 ## Why AI is needed
 - Fire risk depends on several interacting signals (dryness built up over weeks, humidity, heat, recent fire nearby, terrain). A fixed rule like "dry for 10 days" ranks badly.
-- On the held-out year 2025 the model's daily top-10 list caught 33.2% of next-week fire cells against 20.4% for patrolling the historically worst cells.
+- On the held-out year 2025 the model's daily top-10 list caught 38.6% of next-week fire cells against 20.4% for patrolling the historically worst cells.
 - A small tree model was chosen over deep learning: tabular data, explainable reasons, trains in seconds on a CPU.
 
 ## Stack, justified

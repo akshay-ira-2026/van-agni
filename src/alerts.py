@@ -5,6 +5,7 @@ def reasons(r):
     if r.get('dry_days', 0) >= 10: out.append(('no rain for %d days' % r['dry_days'], '%d दिन से बारिश नहीं' % r['dry_days']))
     if r.get('rh7', 100) < 40: out.append(('low humidity %d%%' % r['rh7'], 'कम नमी %d%%' % r['rh7']))
     if r.get('fires_past7', 0) > 0: out.append(('%d fire points nearby this week' % r['fires_past7'], 'इस हफ्ते पास में %d आग बिंदु' % r['fires_past7']))
+    if r.get('viirs_past7', 0) > 0: out.append(('%d satellite (VIIRS 375 m) fire detections this week' % r['viirs_past7'], 'इस हफ्ते %d उपग्रह (VIIRS) आग संकेत' % r['viirs_past7']))
     if r.get('T2M_MAX', 0) >= 30: out.append(('hot, %d C' % r['T2M_MAX'], 'तेज़ गर्मी, %d°C' % r['T2M_MAX']))
     if r.get('hist_rate', 0) >= 0.05: out.append(('fire-prone in past years', 'पिछले वर्षों में आग-प्रवण क्षेत्र'))
     if not out: out.append(('seasonal risk', 'मौसमी जोखिम'))
