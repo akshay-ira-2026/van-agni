@@ -1,6 +1,30 @@
 """Score every grid cell. Mode 'live': Open-Meteo forecast (past 92 days + today) + NASA FIRMS last 7 days.
 Mode 'replay YYYY-MM-DD': score a past day from the archive data, for the demo."""
-import sys, json, io, numpy as np, pandas as pd, requests, joblib
+import sys, json, io, socket, time, numpy as np, pandas as pd, requests, joblib
+import urllib3.util.connection as _uc
+_uc.allowed_gai_family = lambda: socket.AF_INET  # runners sometimes have no IPv6 route (Errno 101)
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+HTTP = requests.Session()
+HTTP.mount('https://', HTTPAdapter(max_retries=Retry(total=5, backoff_factor=3, status_forcelist=[429, 500, 502, 503, 504])))
+FIRMS_URLS = ['https://firms.modaps.eosdis.nasa.gov/data/active_fire/modis-c6.1/csv/MODIS_C6_1_South_Asia_7d.csv',
+              'https://firms.modaps.eosdis.nasa.gov/data/active_fire/suomi-npp-viirs-c2/csv/SUOMI_VIIRS_C2_South_Asia_7d.csv',
+              'https://firms2.modaps.eosdis.nasa.gov/data/active_fire/modis-c6.1/csv/MODIS_C6_1_South_Asia_7d.csv']
+FIRE_SOURCE = 'none'
+
+def fetch_firms():
+    global FIRE_SOURCE
+    for u in FIRMS_URLS:
+        for k in range(3):
+            try:
+                r = HTTP.get(u, timeout=120); r.raise_for_status()
+                f = pd.read_csv(io.StringIO(r.text))
+                if {'latitude', 'longitude', 'acq_date'} <= set(f.columns):
+                    FIRE_SOURCE = u.split('/')[-1]; return f
+            except Exception as e:
+                print('FIRMS fetch failed', u, k, e, file=sys.stderr); time.sleep(10)
+    print('FIRMS unavailable: scoring on weather and history only', file=sys.stderr)
+    return pd.DataFrame(columns=['latitude', 'longitude', 'acq_date', 'confidence'])
 sys.path.insert(0, 'src'); from features import *; from alerts import alert
 model = joblib.load('outputs/van_agni_lgbm.joblib')
 grid = pd.read_csv('data/grid.csv'); g = grid[grid.elev >= 500].reset_index(drop=True)
@@ -16,7 +40,7 @@ def live():
     rows = []
     for i in range(0, len(g), 50):
         ch = g.iloc[i:i+50]
-        j = requests.get('https://api.open-meteo.com/v1/forecast', params={'latitude': ','.join(map(str, ch.lat)), 'longitude': ','.join(map(str, ch.lon)),
+        j = HTTP.get('https://api.open-meteo.com/v1/forecast', params={'latitude': ','.join(map(str, ch.lat)), 'longitude': ','.join(map(str, ch.lon)),
             'daily': 'temperature_2m_max,relative_humidity_2m_mean,wind_speed_10m_max,precipitation_sum', 'past_days': 92, 'forecast_days': 1,
             'timezone': 'Asia/Kolkata', 'wind_speed_unit': 'ms'}, timeout=120).json()
         if isinstance(j, dict): j = [j]
@@ -24,8 +48,8 @@ def live():
             x = pd.DataFrame(d['daily']); x['cell'] = c.cell; rows.append(x)
     w = pd.concat(rows).rename(columns={'temperature_2m_max': 'T2M_MAX', 'relative_humidity_2m_mean': 'RH2M', 'wind_speed_10m_max': 'WS10M_MAX', 'precipitation_sum': 'PRECTOTCORR', 'time': 'date'})
     w['date'] = w.date.str.replace('-', '')
-    txt = requests.get('https://firms.modaps.eosdis.nasa.gov/data/active_fire/modis-c6.1/csv/MODIS_C6_1_South_Asia_7d.csv', timeout=120).text
-    f = pd.read_csv(io.StringIO(txt)); f['type'] = 0
+    f = fetch_firms(); f['type'] = 0
+    f['latitude'] = pd.to_numeric(f.latitude, errors='coerce'); f['longitude'] = pd.to_numeric(f.longitude, errors='coerce')
     f = f[(f.latitude.between(28.75, 31.5)) & (f.longitude.between(77.5, 81.0))]
     f['confidence'] = pd.to_numeric(f.confidence, errors='coerce').fillna(50)
     fires = load_fires_df(f)
