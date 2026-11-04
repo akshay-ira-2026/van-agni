@@ -69,3 +69,6 @@ Code MIT. Data: NASA FIRMS and NASA POWER (NASA open data), Open-Meteo (CC BY 4.
 - All new inputs come from the public 7-day near-real-time feed, so the daily live job uses them too.
 - 2025 held-out: AUC 0.914 (was 0.909), PR-AUC 0.296 (was 0.273), top-10 patrol recall 38.6% (was 33.2%) vs 20.4% baseline.
 - Archive: data/firms_viirs_snpp_uttarakhand_2019_2025.csv.gz (116,060 detections, 2019-2025).
+
+## Stage 4 recorded pitch
+- submission/PITCH_VIDEO_8MIN.mp4: 7 min 30 s narrated pitch (declared synthetic Indian English voice, Hindi close), slides, burned-in captions, live map clip. Script = speaker notes in PITCH_DECK.pptx.
